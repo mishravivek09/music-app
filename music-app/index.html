@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <div>
+        <img
+          src="https://img.etimg.com/thumb/msid-71477539,width-650,imgsize-622277,,resizemode-4,quality-100/music_thinkstockphotos.jpg"
+          alt="logo"
+        />
+      </div>
+      <div>
+        <input id="query" type="search" placeholder="Search Songs...." />
+      </div>
+      <div>
+        <div>
+          <h3>Home</h3>
+        </div>
+        <div>
+          <h3>Login</h3>
+        </div>
+      </div>
+      <div>
+        <select id="select">
+          <option value="">Name</option>
+          <option value="">Email</option>
+          <option value="">Logout</option>
+        </select>
+      </div>
+    </div>
+    <div id="main">
+      <div id="container">
+        <div id="artist">
+          <div id="spinner"><img id="spin" alt="jpg" /></div>
+        </div>
+        <div id="details"><h3 id="names">Lorem ipsum dolor sit amet</h3></div>
+        <div id="gifs">
+          <img id="gif" src="gifs.gif" alt="gif" />
+        </div>
+        <div class="slider1">
+          <h4 id="time1"></h4>
+          <input
+            id="slider"
+            type="range"
+            value="0"
+            min="1"
+            max="100"
+            onchange="seekTo()"
+          />
+          <h4 id="time2"></h4>
+        </div>
+        <div class="slider2">
+          <img id="muted" src="volume.png" alt="" /><input
+            id="volume"
+            min="1"
+            max="100"
+            value="100"
+            type="range"
+            onchange="setVolume()"
+          />
+        </div>
+        <div>
+          <div>
+            <img id="shuffle" onclick="shuffle()" src="loop.png" alt="png" />
+          </div>
+          <div>
+            <img
+              id="prev"
+              onclick="prevPlay()"
+              src="backward-step-solid.svg"
+              alt="icon"
+            />
+            <img
+              id="play"
+              onclick="playPause()"
+              src="circle-play-solid.svg"
+              alt="icon"
+            />
+            <img
+              id="next"
+              onclick="nextPlay()"
+              src="forward-step-solid.svg"
+              alt="icon"
+            />
+          </div>
+          <div>
+            <img id="list" onclick="getList()" src="list.png" alt="png" />
+          </div>
+        </div>
+      </div>
+      <div id="lists"></div>
+    </div>
+    <div id="footer">
+      <div>
+        <a href="https://github.com/mishravivek09" target="_blank"
+          ><img src="github.png" alt="logo"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/vivek-mishra-b9339717a/"
+          target="_blank"
+          ><img src="linkedin.png" alt="logo"
+        /></a>
+      </div>
+      <div>
+        <div>
+          <a href="#">Privacy</a>
+          <p>|</p>
+          <a href="#">Terms</a>
+          <p>|</p>
+          <a href="#">FAQs</a>
+          <p>|</p>
+          <a href="#">Help</a>
+        </div>
+      </div>
+      <div>
+        <div>
+          <a href="#">@mishravivek09.</a>
+          <p>All Rights Reserved.</p>
+          <a href="#">Designed By Vivek Mishra</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>

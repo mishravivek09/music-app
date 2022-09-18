@@ -1,0 +1,317 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-style: oblique;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background: url(https://www.pixelstalk.net/wp-content/uploads/images2/Free-Download-Computer-Wallpaper-HD-for-Desktop.jpg);
+  background-size: cover;
+}
+#navbar {
+  display: flex;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: darkgray;
+  color: white;
+}
+#navbar > div:first-child {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+#navbar > div > img {
+  width: 100%;
+  border-radius: 50%;
+}
+#navbar > div:nth-child(2) {
+  width: 30%;
+  margin-left: -10%;
+  height: 3rem;
+}
+#navbar > div:nth-child(2) > input {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid black;
+  padding: 0px 10px;
+  background-color: silver;
+  color: white;
+}
+#navbar > div:nth-child(3) {
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: -20%;
+}
+#navbar > div:nth-child(3) > div > h3 {
+  cursor: pointer;
+}
+#navbar > div:last-child > select {
+  border: none;
+  background-color: darkgray;
+  width: 80px;
+  outline: none;
+  cursor: pointer;
+  color: white;
+}
+#container {
+  border: 2px solid silver;
+  border-radius: 20px;
+  background: cadetblue;
+  display: grid;
+  margin: auto;
+  width: 25%;
+  margin-top: 50px;
+  height: 75vh;
+}
+#container > div:last-child {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  align-items: center;
+  padding: 0px 15px;
+}
+#container > div:last-child > div:nth-child(2) {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  align-items: center;
+}
+#shuffle {
+  width: 30px;
+  cursor: pointer;
+}
+#list {
+  width: 25px;
+  cursor: pointer;
+}
+#prev {
+  width: 25px;
+  cursor: pointer;
+}
+#next {
+  width: 25px;
+  cursor: pointer;
+}
+#play {
+  width: 35px;
+  cursor: pointer;
+}
+#artist {
+  width: 25%;
+  height: 10vh;
+  margin: auto;
+}
+#details {
+  margin: auto;
+  width: 70%;
+  height: 10vh;
+}
+
+.slider1 {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: -10px;
+}
+.slider1 > input {
+  width: 63%;
+  cursor: pointer;
+  outline: none;
+}
+.slider2 {
+  width: 60%;
+  margin: auto;
+  margin-right: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slider2 > img {
+  width: 25px;
+  cursor: pointer;
+}
+.slider2 > input {
+  width: 82.5%;
+  cursor: pointer;
+  outline: none;
+}
+#artist {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+#spinner {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#spin {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+#details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -20px;
+}
+
+#gifs {
+  width: 50%;
+  height: 50px;
+  margin: auto;
+  margin-top: -20px;
+  margin-bottom: -25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#gif {
+  width: 100%;
+  opacity: 0;
+}
+#footer {
+  padding: 50px;
+  background-color: darkgrey;
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+#footer > div:nth-child(1) {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#footer > div > a > img:nth-child(1) {
+  width: 30px;
+  cursor: pointer;
+}
+#footer > div:nth-child(2) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+#footer > div:last-child {
+  display: flex;
+  margin: auto;
+  margin-top: 25px;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+#footer > div:last-child > div {
+  display: flex;
+  width: 75%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#footer > div:last-child > div > a {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+}
+#footer > div:nth-child(2) > div {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+#footer > div:nth-child(2) > div > a {
+  text-decoration: none;
+  color: white;
+}
+#footer > div > a > img:nth-child(2) {
+  width: 25px;
+  cursor: pointer;
+}
+#List {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+#List > div {
+  display: flex;
+  column-gap: 15px;
+}
+#List > div > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.back {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+}
+.backBtn {
+  width: 25px;
+  margin: auto;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.back > h4 {
+  margin: auto;
+  margin-left: -20px;
+}
+#lists {
+  border: 2px solid silver;
+  border-radius: 20px;
+  background-color: darkcyan;
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+  width: 25%;
+  height: 75vh;
+  display: none;
+  padding: 0 15px;
+}
+#lists > div {
+  background-color: cadetblue;
+  border-radius: 25px;
+}
+#lists > div:first-child {
+  border-radius: 0;
+  background-color: darkcyan;
+  padding: 10px;
+}
